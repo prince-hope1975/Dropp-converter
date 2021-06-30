@@ -30,6 +30,11 @@ body{
     .logo{
         h2{
             font-size: 1.2em;
+            color:rgb(70, 83, 89);
+            
+        }
+        a{
+            text-decoration: none;
         }
     }
     .menu{
@@ -60,6 +65,32 @@ header{
     }
     p{
         margin:10px 0px;
+    }
+}
+.menu_box{
+    display: none;
+    width:100%;
+    position: fixed;
+    top:0;
+    z-index: 40;
+    height:100vh;
+    backdrop-filter: blur(4px);
+    position:fixed;
+    .wrap{
+        padding:20px 30px;
+        width:80%;
+        border-radius:13px;
+        margin:50px auto;
+        background:orange;
+        .menu_box_item{
+            ul{
+                li{
+                    margin:10px 0;
+                    color:rgb(255, 255, 255);
+                    list-style:none;
+                }
+            }
+        }
     }
 }
 

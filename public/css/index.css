@@ -39,6 +39,11 @@ body {
 
 .divette .logo h2 {
   font-size: 1.2em;
+  color: #465359;
+}
+
+.divette .logo a {
+  text-decoration: none;
 }
 
 .divette .menu i {
@@ -70,6 +75,32 @@ header h1 {
 
 header p {
   margin: 10px 0px;
+}
+
+.menu_box {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 40;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  position: fixed;
+}
+
+.menu_box .wrap {
+  padding: 20px 30px;
+  width: 80%;
+  border-radius: 13px;
+  margin: 50px auto;
+  background: orange;
+}
+
+.menu_box .wrap .menu_box_item ul li {
+  margin: 10px 0;
+  color: white;
+  list-style: none;
 }
 
 form {

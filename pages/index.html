@@ -7,13 +7,33 @@
   <title>Convert your FIles from one format to another</title>
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
+
+  <div class="menu_box animate__animated animate__fadeIn">
+    <div class="wrap">
+      <div class="menu_box_item">
+        <ul>
+          <li>Tools</li>
+          <li>How to USe</li>
+          <li>Compress Files<li/>
+          <li>Merge Files</li>
+          <li>Donate</li>
+        </ul>
+      </div>
+    </div>
+   
+  </div>
+
+
    <div class="container">
       <div class="divette">
         <div class="logo">
-          <h2>Dropp</h2>
+          <a href="/">
+            <h2>Dropp</h2>
+          </a>
         </div>
         <div class="menu">
           <i class="ri-home-smile-line"></i>
@@ -93,32 +113,6 @@
       
   </footer>
 
-
-    <script>
-
-      var chooseFile =   document.querySelector('#upfile');
-      var form = document.querySelector('.fileupload');
-      document.querySelector('.selectPrompt').addEventListener('click', getFile = () => {
-       chooseFile.click()
-      })
-
-     chooseFile.addEventListener('input', (e)=>{
-        document.querySelector('.selectPrompt').innerHTML= `Converting...  <span class="preloader">
-        <img src="/images/1475 (1).gif" alt="">
-      </span>`;
-       var wordDoc = chooseFile.files[0].name;
-    
-        document.querySelector('.Xash').innerHTML= `${wordDoc}`;
-        document.querySelector('.preloader').style='display:block';
-        setTimeout(()=>{
-          form.submit();
-
-        }, 1000)
-      })
-
-      
-      
-      
-    </script>
+<script src="/js/index.js"></script>
 </body>
 </html>
