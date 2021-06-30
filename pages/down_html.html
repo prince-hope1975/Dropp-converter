@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="divette">
+              <div class="logo">
+                <h2>Dropp</h2>
+              </div>
+              <div class="menu">
+                <i class="ri-home-smile-line"></i>
+              </div>
+            </div>
+
+            <header>
+                <h1>Thank you for using Dropp</h1>
+                <p>Download your converted file</p>
+        
+            </header>
+
+            <div class="btn">
+                <button id="download">
+                    Download PDF <i class="ri-download-cloud-2-line"></i>
+                </button>
+                <a class='next' href="/">Convert another file</a>
+            </div>
+
+            
+      
+         
+          </div>
+    </body>
+
+    <script>
+        document.querySelector('#download').addEventListener('click', ()=>{
+            window.open('/download')
+        })
+    </script>
+</html>

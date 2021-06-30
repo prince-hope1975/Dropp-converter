@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.divette {
+  height: auto;
+  left: 0px;
+  padding: 15px 20px;
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #f4f8fc;
+  top: 0px;
+}
+
+.divette .logo h2 {
+  font-size: 1.2em;
+}
+
+.divette .menu i {
+  font-size: 1.5em;
+}
+
+header {
+  margin-top: 20%;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+header .icons i {
+  padding: 10px;
+  font-size: 2em;
+}
+
+header .icons .fa-file-word {
+  color: #3d99f5;
+}
+
+header .icons .fa-file-pdf {
+  color: #f23030;
+}
+
+header h1 {
+  color: #465359;
+}
+
+header p {
+  margin: 10px 0px;
+}
+
+form {
+  width: 100%;
+  background-color: #3d99f5;
+  padding: 30px;
+  border: 1px dotted white;
+  text-align: center;
+  border-radius: 9px;
+}
+
+form .image_doc {
+  width: 60%;
+}
+
+form [name='upfile'] {
+  display: none;
+}
+
+form .Xash {
+  margin: 4px 0px;
+  font-style: italic;
+  background: #c0d9ff;
+}
+
+form h1 {
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 13px;
+  background: white;
+  color: #465359;
+  margin: 15px 0px 10px 0px;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+form .ddau {
+  width: 90px;
+}
+
+.preloader {
+  display: none;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn button {
+  width: auto;
+  padding: 10px 20px;
+  color: #465359;
+  background: white;
+  text-align: centers;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.btn button i {
+  color: #f23030;
+  font-size: 1.3em;
+}
+
+.next {
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,22 @@
+{
+  "name": "word-to-pdf-converter",
+  "version": "1.0.0",
+  "description": "A word to pdfile converter built with nodeJs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "word",
+    "pdf",
+    "converter"
+  ],
+  "author": "Akoh Jesse",
+  "license": "ISC",
+  "dependencies": {
+    "docx-pdf": "^0.0.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "mv": "^2.1.1"
+  }
+}

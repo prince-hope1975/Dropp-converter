@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+$pdf-red: rgb(242, 48, 48);
+$word-blue: rgb(61, 153, 245);
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    width:90%;
+    margin:0 auto;
+}
+.divette{
+    height:auto;
+    left: 0px;
+    padding:15px 20px;
+    width:100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color:#f4f8fc;
+    top:0px;
+    .logo{
+        h2{
+            font-size: 1.2em;
+        }
+    }
+    .menu{
+        i{
+            font-size: 1.5em;
+        }
+    }
+}
+header{
+    margin-top: 20%;
+    padding:40px 0px;
+    text-align: center;
+    .icons{
+        i{
+            padding:10px;
+            font-size: 2em;
+        }
+        .fa-file-word{
+            color: $word-blue;
+        }
+        .fa-file-pdf{
+            color: $pdf-red;
+        }
+    }
+
+    h1{
+        color:rgb(70, 83, 89);
+    }
+    p{
+        margin:10px 0px;
+    }
+}
+
+form{
+    width:100%;
+    background-color: $word-blue;
+    padding:30px;
+    border: 1px dotted white;
+    text-align: center;
+    border-radius:9px;
+    .image_doc{
+        width: 60%;
+    }
+    [name='upfile']{
+          display: none;
+    }
+    .Xash{
+        margin:4px 0px;
+        font-style: italic;
+        background: rgb(192, 217, 255);
+    }
+    // .ready{
+    //     background:;
+    // }
+    h1{
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 13px;
+        background: white;
+        color:rgb(70, 83, 89) ;
+        margin:15px 0px 10px 0px ;
+        font-weight: 400;
+        font-size:1.5em;
+    }
+    .ddau{
+        width: 90px;
+    }
+}
+.preloader{
+    display: none;
+}
+.btn{
+    text-align: center;
+    button{
+        width:auto;
+        padding:10px 20px;
+        color:rgb(70, 83, 89);
+        background:white;
+        text-align: centers;
+        border: 1px solid grey;
+        border-radius:4px;
+        i{
+            color: $pdf-red;
+            font-size: 1.3em;
+        }
+    }
+}
+.next{
+    text-align: center;
+    display: block;
+    margin-top:5px;
+}
