@@ -29,7 +29,17 @@ app.post('/uploads/docx', (req, res)=>{
           name =  file.name;
       const First_name = name.split('.')[0];
       down_name = First_name;
-
+      var dir = './uploads'
+      try {
+         if (!fs.existsSync(dir)) {
+             fs.mkdirSync(dir);
+             console.log("Directory is created.");
+         } else {
+             console.log("Directory already exists.");
+         }
+     } catch (err) {
+         console.log(err);
+     }
       file.mv( __dirname + '/uploads/' + name,  (err)=>{
          if(err){
             console.log(err)
