@@ -49,27 +49,14 @@ app.post('/uploads/docx', (req, res)=>{
              var initialPath = path.join(__dirname, `/uploads/${First_name}${extend_docx}`);
              var upload_Path = path.join(__dirname, `/uploads/${First_name}${extend_pdf}`);
 
-            //  docxConverter(initialPath, upload_Path, (err, result)=>{
-            //   if(err){
-            //      console.log(err)
-            //   }
-            //   else{
-            //    res.sendFile(path.resolve(__dirname + '/pages/down_html.html'))
-            //   }
-            //  })
-
-            const filew = fs.readFileSync(initialPath);
-                               
-             libre.convert(filew, extend_pdf, undefined, (err, done) => {
-                         if (err) {
-                              console.log(`Error converting file: ${err}`);
-                        }
-                        else{
-                           fs.writeFileSync(upload_Path, done);
-                           res.sendFile(path.resolve(__dirname + '/pages/down_html.html'))
-                        }
-          
-               });
+             docxConverter(initialPath, upload_Path, (err, result)=>{
+              if(err){
+                 console.log(err)
+              }
+              else{
+               res.sendFile(path.resolve(__dirname + '/pages/down_html.html'))
+              }
+             })
          }
       })
    }
@@ -83,10 +70,10 @@ app.get('/download',(req, res)=>{
       if(err){
         console.log(err)
       }
-      // else{
-      //  const delete_path_doc = process.cwd() + `/uploads/${down_name}${extend_docx}`;
-      //  const delete_path_pdf = process.cwd() + `/uploads/${down_name}${extend_pdf}`;
-      // }
+      else{
+       const delete_path_doc = process.cwd() + `/uploads/${down_name}${extend_docx}`;
+       const delete_path_pdf = process.cwd() + `/uploads/${down_name}${extend_pdf}`;
+      }
       try{
        fs.unlinkSync(delete_path_doc);
        fs.unlinkSync(delete_path_pdf);
