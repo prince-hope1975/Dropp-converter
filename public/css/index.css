@@ -99,6 +99,8 @@ header p {
 
 .menu_box .wrap .menu_box_item ul li {
   margin: 10px 0;
+  font-weight: 700;
+  font-size: 1.2em;
   color: white;
   list-style: none;
 }
