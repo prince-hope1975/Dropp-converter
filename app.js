@@ -22,6 +22,8 @@ app.use(express.static('./public'));
 app.use(engine);
 app.set('views', __dirname + '/views');
 
+// Handling Get Requests
+
 app.get('/Files/Word-pdf', (req, res)=>{
   res.render("word2pdf",{
    from: "DOCX",
@@ -42,7 +44,9 @@ app.get('/Files/Ppt-pdf', (req, res)=>{
    })
 })
 
-app.post('/uploads/docx', (req, res)=>{
+// End of Get requests
+
+app.post('/uploads/DOCX-PDF', (req, res)=>{
    if(req.files.upfile){
       var file = req.files.upfile,
           name =  file.name;
