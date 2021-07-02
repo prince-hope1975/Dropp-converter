@@ -7,6 +7,7 @@
   <title>Convert your FIles from one format to another</title>
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
@@ -38,18 +39,12 @@
           <i class="ri-home-smile-line"></i>
         </div>
       </div>
-      <header>
-        <div class="icons">
-          <i class="fas fa-file-word"></i>
-          <i class="fas fa-arrow-right"></i>
-          <i class="fas fa-file-pdf"></i>
-        </div>
-        
-        <h1>Word files to PDF</h1>
-        <p>Easily Convert your DOC to PDF online</p>
-      </header>
+
+        @!section('content')
+    
+     
    </div>
-   @!section('content')
+ 
 
    
    <footer>
@@ -63,7 +58,9 @@
                         </a>
                       
                     </li>
-                    <li>Convert Pdf to Word</li>
+                    <li>
+                      <a href="/Files/Pdf-word">Convert Pdf to Word</a>
+                      </li>
                     <li>Convert PPT to word</li>
 
                 </ul>
@@ -103,5 +100,6 @@
     
     
 </footer>
+<script src="/js/index.js"></script>
 
 </body>

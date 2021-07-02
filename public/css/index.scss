@@ -94,9 +94,14 @@ header{
     }
 }
 
+.DOCX{
+    background: $word-blue;
+}
+.PDF{
+    background: $pdf-red;
+}
 form{
     width:100%;
-    background-color: $word-blue;
     padding:30px;
     border: 1px dotted white;
     text-align: center;

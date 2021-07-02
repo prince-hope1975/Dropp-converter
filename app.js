@@ -1,4 +1,5 @@
 const express = require('express');
+const {config, engine} = require('express-edge');
 var app = express();
 const libre = require('libreoffice-convert');
 const bodyParser = require('body-parser')
@@ -9,7 +10,7 @@ const extend_pdf = '.pdf';
 const extend_docx = '.docx';
 const process = require('process')
 const mv = require('mv');
-const {config, engine} = require('express-edge');
+
 
 const port = process.env.PORT || 4000;
 app.use(bodyParser.urlencoded({
@@ -21,9 +22,18 @@ app.use(express.static('./public'));
 app.use(engine);
 app.set('views', __dirname + '/views');
 
-app.get('/Word-pdf', (req, res)=>{
-  res.render('word2pdf')
+app.get('/Files/Word-pdf', (req, res)=>{
+  res.render("word2pdf",{
+   from: "DOCX",
+   To: "PDF"
+})
 });
+app.get('/Files/Pdf-word', (req, res)=>{
+   res.render("pdfToWord",{
+      from: "PDF",
+      To: "DOCX"
+   })
+})
 
 app.post('/uploads/docx', (req, res)=>{
    if(req.files.upfile){

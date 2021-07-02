@@ -103,9 +103,16 @@ header p {
   list-style: none;
 }
 
+.DOCX {
+  background: #3d99f5;
+}
+
+.PDF {
+  background: #f23030;
+}
+
 form {
   width: 100%;
-  background-color: #3d99f5;
   padding: 30px;
   border: 1px dotted white;
   text-align: center;
