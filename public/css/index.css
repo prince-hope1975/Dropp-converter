@@ -88,8 +88,8 @@ header p {
   top: 0;
   z-index: 40;
   height: 100vh;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
   position: fixed;
 }
 
@@ -98,15 +98,22 @@ header p {
   width: 80%;
   border-radius: 13px;
   margin: 50px auto;
-  background: orange;
+}
+
+.menu_box .wrap .menu_box_item ul {
+  text-align: center;
 }
 
 .menu_box .wrap .menu_box_item ul li {
-  margin: 10px 0;
+  margin: 20px 0;
   font-weight: 700;
   font-size: 1.2em;
-  color: white;
+  color: #465359;
   list-style: none;
+}
+
+.menu_box .wrap .menu_box_item ul li:hover {
+  color: #ff9100;
 }
 
 .DOCX {
@@ -124,6 +131,7 @@ header p {
 form {
   width: 100%;
   padding: 30px;
+  margin: 0 auto;
   border: 1px dotted white;
   text-align: center;
   border-radius: 9px;
@@ -261,5 +269,27 @@ footer .wrap .credits {
 
 footer .wrap .credits a {
   color: orange;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 80%;
+  }
+  .divette {
+    padding: 15px 30px;
+  }
+  .form {
+    width: 90%;
+  }
+  footer .wrap {
+    margin-top: 9% !important;
+    width: 80%;
+    padding: 8% 10px;
+  }
+  footer .wrap .sideBYside {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 /*# sourceMappingURL=index.css.map */
