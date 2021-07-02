@@ -43,6 +43,16 @@ body{
             font-size: 1.5em;
         }
     }
+    .tools{
+        ul{
+            display: flex;
+            flex-direction: row;
+            li{
+                margin:0px 20px;
+                list-style-type: none;
+            }
+        }
+    }
 }
 header{
     margin-top: 20%;
@@ -238,6 +248,11 @@ footer{
         }
     }
 }
+@media (min-width:440px){
+    header{
+        margin-top: 10%;
+    }
+}
 @media (min-width:500px){
     .container{
         width:80%;
@@ -258,4 +273,7 @@ footer{
             }
         }
     }
+}
+@media (min-width:700px){
+
 }

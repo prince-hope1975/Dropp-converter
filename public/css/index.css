@@ -50,6 +50,21 @@ body {
   font-size: 1.5em;
 }
 
+.divette .tools ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.divette .tools ul li {
+  margin: 0px 20px;
+  list-style-type: none;
+}
+
 header {
   margin-top: 20%;
   padding: 40px 0px;
@@ -269,6 +284,12 @@ footer .wrap .credits {
 
 footer .wrap .credits a {
   color: orange;
+}
+
+@media (min-width: 440px) {
+  header {
+    margin-top: 10%;
+  }
 }
 
 @media (min-width: 500px) {
