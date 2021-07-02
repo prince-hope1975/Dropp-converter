@@ -8,6 +8,9 @@ const path = require('path')
 const extend_pdf = '.pdf';
 const extend_docx = '.docx';
 const process = require('process')
+const mv = require('mv');
+const {config, engine} = require('express-edge');
+
 const port = process.env.PORT || 4000;
 app.use(bodyParser.urlencoded({
     extended: true
@@ -15,6 +18,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(upload());
 app.use(express.static('./public'));
+app.use(engine);
+app.set('views', __dirname + '/views');
 
 app.get('/', (req, res)=>{
    res.sendFile(path.resolve(__dirname + '/pages/index.html'))
@@ -53,7 +58,6 @@ app.post('/uploads/docx', (req, res)=>{
               }
               else{
                 fs.writeFileSync(upload_Path, done);
-                res.sendFile(path.resolve(__dirname + '/pages/down_html.html'))
               }
             })
          }
@@ -72,8 +76,8 @@ app.get('/download',(req, res)=>{
         console.log(err)
       }
       else{
-       const delete_path_doc = process.cwd() + `/uploads/${First_name}${extend_docx}`;
-       const delete_path_pdf = process.cwd() + `/uploads/${First_name}${extend_pdf}`;
+       const delete_path_doc = process.cwd() + `/uploads/${down_name}${extend_docx}`;
+       const delete_path_pdf = process.cwd() + `/uploads/${down_name}${extend_pdf}`;
       }
       try{
        fs.unlinkSync(delete_path_doc);
