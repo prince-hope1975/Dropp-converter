@@ -2,6 +2,7 @@
 
 $pdf-red: rgb(242, 48, 48);
 $word-blue: rgb(61, 153, 245);
+$ppt: rgb(255, 128, 0);
 *{
     margin:0px;
     padding:0px;
@@ -101,6 +102,9 @@ header{
 }
 .PDF{
     background: $pdf-red;
+}
+.PPT{
+    background: $ppt;
 }
 form{
     width:100%;
