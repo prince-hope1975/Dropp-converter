@@ -21,8 +21,8 @@ app.use(express.static('./public'));
 app.use(engine);
 app.set('views', __dirname + '/views');
 
-app.get('/', (req, res)=>{
-   res.sendFile(path.resolve(__dirname + '/pages/index.html'))
+app.get('/Word-pdf', (req, res)=>{
+  res.render('word2pdf')
 });
 
 app.post('/uploads/docx', (req, res)=>{
@@ -70,7 +70,7 @@ app.post('/uploads/docx', (req, res)=>{
       res.end()
    }
 })
-app.get('/download',(req, res)=>{
+app.get('/downloads/docx',(req, res)=>{
    res.download(__dirname + `/uploads/${down_name}${extend_pdf}`,`${down_name}${extend_pdf}`, (err)=>{
       if(err){
         console.log(err)
@@ -90,9 +90,6 @@ app.get('/download',(req, res)=>{
  })
 })
 
-app.get('/thankyou', ()=>{
-   res.sendFile(__dirname + '/thankYou.html')
-})
 
 app.listen(port, ()=>{
    console.log('listening on port ' + port)
