@@ -35,6 +35,13 @@ app.get('/Files/Pdf-word', (req, res)=>{
    })
 })
 
+app.get('/Files/Ppt-pdf', (req, res)=>{
+   res.render('pptToPdf', {
+      from : "PPT",
+      To: "PDF"
+   })
+})
+
 app.post('/uploads/docx', (req, res)=>{
    if(req.files.upfile){
       var file = req.files.upfile,
