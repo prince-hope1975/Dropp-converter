@@ -50,6 +50,10 @@ body {
   font-size: 1.5em;
 }
 
+.divette .tools {
+  display: none;
+}
+
 .divette .tools ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,7 +148,7 @@ header p {
 }
 
 form {
-  width: 100%;
+  width: 91%;
   padding: 30px;
   margin: 0 auto;
   border: 1px dotted white;
@@ -154,6 +158,7 @@ form {
 
 form .image_doc {
   width: 60%;
+  margin: 5px 0px;
 }
 
 form [name='upfile'] {
@@ -297,10 +302,10 @@ footer .wrap .credits a {
     width: 80%;
   }
   .divette {
-    padding: 15px 30px;
+    padding: 15px 50px;
   }
-  .form {
-    width: 90%;
+  form {
+    width: 87%;
   }
   footer .wrap {
     margin-top: 9% !important;
@@ -311,6 +316,48 @@ footer .wrap .credits a {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 720px) {
+  form {
+    width: 80%;
+  }
+  .divette {
+    padding: 15px 70px;
+  }
+  footer .wrap {
+    padding: 5% 10px;
+  }
+  footer .wrap .socials {
+    margin: 2% 0px;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    margin-top: 7%;
+  }
+  .divette {
+    padding: 20px 55px;
+  }
+  .divette .tools {
+    display: block;
+  }
+  .divette .tools ul li {
+    font-size: 0.9em;
+  }
+  form {
+    padding: 50px;
+  }
+  form .image_doc {
+    width: 50%;
+  }
+  footer .wrap {
+    padding: 3% 10px;
+  }
+  footer .wrap .socials {
+    margin: 2% 0px;
   }
 }
 /*# sourceMappingURL=index.css.map */

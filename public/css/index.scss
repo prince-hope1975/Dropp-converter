@@ -44,6 +44,7 @@ body{
         }
     }
     .tools{
+        display: none;
         ul{
             display: flex;
             flex-direction: row;
@@ -127,7 +128,7 @@ header{
     background: $ppt;
 }
 form{
-    width:100%;
+    width:91%;
     padding:30px;
     margin:0 auto;
     border: 1px dotted white;
@@ -135,6 +136,7 @@ form{
     border-radius:9px;
     .image_doc{
         width: 60%;
+        margin:5px 0px;
     }
     [name='upfile']{
           display: none;
@@ -258,10 +260,10 @@ footer{
         width:80%;
     }
     .divette{
-        padding:15px 30px;
+        padding:15px 50px;
     }
-    .form{
-        width:90%;
+    form{
+        width:87%;
     }
     footer{
         .wrap{
@@ -274,6 +276,49 @@ footer{
         }
     }
 }
-@media (min-width:700px){
+@media (min-width:720px){
+    form{
+        width:80%;
+    } .divette{
+        padding:15px 70px;
+    }
+    footer{
+        .wrap{
+            padding:5% 10px;
+            .socials{
+                margin: 2% 0px;
+            }
+        }
+    }
+}
+@media (min-width:1000px){
+    header{
+        margin-top:7%;
+    }
+    .divette{
+        padding:20px 55px ;
+        .tools{
+            display: block;
+            ul{
+                li{
+                    font-size:0.9em;
+                }
+            }
+        }
+    }
+    form{
+        padding:50px;
+        .image_doc{
+            width: 50%;
 
+        }
+    }
+    footer{
+        .wrap{
+            padding:3% 10px;
+            .socials{
+                margin: 2% 0px;
+            }
+        }
+    }
 }
