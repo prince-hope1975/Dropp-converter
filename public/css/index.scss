@@ -52,12 +52,18 @@ header{
         i{
             padding:10px;
             font-size: 2em;
+
         }
+
+        // insert styles for the icons of each page
         .fa-file-word{
             color: $word-blue;
         }
         .fa-file-pdf{
             color: $pdf-red;
+        }
+        .fa-file-powerpoint{
+           color:$ppt;
         }
     }
 
