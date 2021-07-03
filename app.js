@@ -75,23 +75,16 @@ app.post('/uploads/DOCX-PDF', (req, res)=>{
              var initialPath = path.join(__dirname, `/uploads/${First_name}${extend_docx}`);
              var upload_Path = path.join(__dirname, `/uploads/${First_name}${extend_pdf}`);
            
-            // docxConverter(initialPath, upload_Path, (err, result)=> {
-            //    if(err){
-            //       console.log(err)
-            //    }
-            //    else{
-            //       res.sendFile(path.resolve(__dirname + '/pages/down_html.html'))
-            //    }
-            // })
-
-            libre.convert(initialPath, extend_pdf, undefined, (err, done) => {
+            docxConverter(initialPath, upload_Path, (err, result)=> {
                if(err){
-                  console.log(err + `This app is not working`)
+                  console.log(err)
                }
                else{
-                  
+                  res.sendFile(path.resolve(__dirname + '/pages/down_html.html'))
                }
             })
+
+            
             
          }
       })
