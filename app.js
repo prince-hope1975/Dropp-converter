@@ -5,12 +5,15 @@ const libre = require('libreoffice-convert');
 const bodyParser = require('body-parser')
 var upload = require('express-fileupload');;
 const fs = require('fs');
-const path = require('path')
+const path = require('path');
+var down_name;
+const docxConverter = require("docx-pdf")
 const extend_pdf = '.pdf';
 const extend_docx = '.docx';
 const process = require('process')
 const mv = require('mv');
-
+var delete_path_doc;
+var delete_path_pdf;
 
 const port = process.env.PORT || 4000;
 app.use(bodyParser.urlencoded({
@@ -38,7 +41,7 @@ app.get('/Files/Pdf-word', (req, res)=>{
 })
 
 app.get('/Files/Ppt-pdf', (req, res)=>{
-   res.render('pptToPdf', {
+   res.render('pptToPdf', { 
       from : "PPT",
       To: "PDF"
    })
@@ -71,16 +74,25 @@ app.post('/uploads/DOCX-PDF', (req, res)=>{
              console.log('file uploaded')
              var initialPath = path.join(__dirname, `/uploads/${First_name}${extend_docx}`);
              var upload_Path = path.join(__dirname, `/uploads/${First_name}${extend_pdf}`);
+           
+            // docxConverter(initialPath, upload_Path, (err, result)=> {
+            //    if(err){
+            //       console.log(err)
+            //    }
+            //    else{
+            //       res.sendFile(path.resolve(__dirname + '/pages/down_html.html'))
+            //    }
+            // })
 
-            const filew = fs.readFileSync(initialPath);
-            libre.convert(filew, extend_pdf, undefined, (err, done) => {
-                if (err) {
-                    console.log(`Error converting file: ${err}`);
-              }
-              else{
-                fs.writeFileSync(upload_Path, done);
-              }
+            libre.convert(initialPath, extend_pdf, undefined, (err, done) => {
+               if(err){
+                  console.log(err + `This app is not working`)
+               }
+               else{
+                  
+               }
             })
+            
          }
       })
 
@@ -91,14 +103,14 @@ app.post('/uploads/DOCX-PDF', (req, res)=>{
       res.end()
    }
 })
-app.get('/downloads/docx',(req, res)=>{
+app.get('/download',(req, res)=>{
    res.download(__dirname + `/uploads/${down_name}${extend_pdf}`,`${down_name}${extend_pdf}`, (err)=>{
       if(err){
         console.log(err)
       }
       else{
-       const delete_path_doc = process.cwd() + `/uploads/${down_name}${extend_docx}`;
-       const delete_path_pdf = process.cwd() + `/uploads/${down_name}${extend_pdf}`;
+        delete_path_doc = process.cwd() + `/uploads/${down_name}${extend_docx}`;
+       delete_path_pdf = process.cwd() + `/uploads/${down_name}${extend_pdf}`;
       }
       try{
        fs.unlinkSync(delete_path_doc);
