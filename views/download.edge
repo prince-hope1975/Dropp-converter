@@ -1,0 +1,29 @@
+@layout('layouts.app')
+
+@section('content')
+<div class="container">
+    <header>
+        <h1>Download your PDF</h1>
+    </header>
+
+    <div class="btn">
+        <button id="download">
+             PDF <i class="ri-download-cloud-2-line"></i>
+        </button>
+        <a class='next' href="/">Convert another file</a>
+    </div>
+     
+    <div class="happy">
+        <h3>Thank you for Using Dropp</h3>
+        <img src="/images/thank.svg" alt="">
+    </div>
+
+</div>
+
+<script>
+    document.querySelector('#download').addEventListener('click', ()=>{
+        window.open('/download/pdf');
+    })
+</script>
+
+@endsection
