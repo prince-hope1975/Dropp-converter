@@ -5,6 +5,8 @@ const fs = require('fs');
 const extend_pdf = '.pdf';
 const extend_docx = '.docx';
 const docxConverter = require("docx-pdf");
+const libre = require('libreoffice-convert');
+
 var down_name;
 
 router.post('/PPT-PDF', (req,res)=> {
