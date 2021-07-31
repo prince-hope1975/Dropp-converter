@@ -5,8 +5,6 @@ const fs = require('fs');
 const extend_pdf = '.pdf';
 const extend_docx = '.docx';
 const docxConverter = require("docx-pdf");
-const { PDFNet } = require('@pdftron/pdfnet-node');
-var toPdf = require("office-to-pdf");
 var down_name;
 
 router.post('/PPT-PDF', (req,res)=> {
@@ -33,17 +31,19 @@ router.post('/PPT-PDF', (req,res)=> {
          console.log('file uploaded');
          var initialPath = path.join(`./uploads/${first_name}.pptx}`);
          var upload_Path = path.join(`./uploads/${first_name}${extend_pdf}`);
-         toPdf(initialPath).then(
-            (pdfBuffer) => {
-              fs.writeFileSync(upload_Path, pdfBuffer);
-            }, (err) => {
-              console.log(err)
+
+         libre.convert(initialPath, extend_pdf, undefined, (err, done) => {
+            if (err) {
+              console.log(`Error converting file: ${err}`);
             }
-          )
+            
+            fs.writeFileSync(upload_Path, done);
+        });
       }
      })
-
-     
+   }
+   else{
+      console.log('e no work')
    }
 })
 
