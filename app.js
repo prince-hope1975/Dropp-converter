@@ -6,7 +6,9 @@ var upload = require('express-fileupload');
 
 const Files  = require('./Routes/files');
 const Uploads =  require('./Routes/uploads');
-const Downloads = require('./Routes/download')
+const Downloads = require('./Routes/download');
+const Index = require('./Routes/index');
+
 const mv = require('mv');
 
 const port = process.env.PORT || 4000;
@@ -20,6 +22,7 @@ app.use(express.static('./public'));
 app.use(engine);
 app.set('views', __dirname + '/views');
 
+app.use(Index)
 app.use('/Files', Files);
 app.use('/uploads', Uploads.router);
 app.use('/download', Downloads);
