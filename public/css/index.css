@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("Dashboard.css");
 * {
   margin: 0px;
   padding: 0px;
@@ -34,6 +35,7 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: #f4f8fc;
+  margin-bottom: 40px;
   top: 0px;
 }
 
@@ -339,7 +341,7 @@ footer .wrap .credits a {
     margin-top: 7%;
   }
   .divette {
-    padding: 20px 55px;
+    padding: 20px 120px;
   }
   .divette .tools {
     display: block;

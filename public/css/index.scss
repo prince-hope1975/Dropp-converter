@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+@import url('Dashboard.css');
 $pdf-red: rgb(242, 48, 48);
 $word-blue: rgb(61, 153, 245);
 $ppt: rgb(255, 128, 0);
@@ -27,6 +27,7 @@ body{
     align-items: center;
     align-content: center;
     background-color:#f4f8fc;
+    margin-bottom:40px;
     top:0px;
     .logo{
         h2{
@@ -296,7 +297,7 @@ footer{
         margin-top:7%;
     }
     .divette{
-        padding:20px 55px ;
+        padding:20px 120px ;
         .tools{
             display: block;
             ul{
