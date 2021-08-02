@@ -60,6 +60,15 @@ body {
   display: none;
 }
 
+.divette .cta button {
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #00B0FF;
+  padding: 10px 25px;
+}
+
 .divette .tools {
   display: none;
 }

@@ -3,6 +3,7 @@
 $pdf-red: rgb(242, 48, 48);
 $word-blue: rgb(61, 153, 245);
 $ppt: rgb(255, 128, 0);
+$blue:#00B0FF;
 *{
     margin:0px;
     padding:0px;
@@ -50,6 +51,14 @@ body{
     }
     .cta{
         display: none;
+        button{
+        color:white;
+        border-radius: 5px;
+        outline: none;
+        border:none;
+        background:$blue;
+        padding:10px 25px;
+        }
     }
     .tools{
         display: none;

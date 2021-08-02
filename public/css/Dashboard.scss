@@ -16,20 +16,15 @@
                  font-size: 2.6em;
                  color: rgb(58, 58, 58);
                  line-height:55px;
-                 span{
-                     text-transform: uppercase;
-                 }
-                 .any1{
-                     color:burlywood;
-                     transition: 2s ease-in-out;
-                 }
-                 .any2{
-                     color:rgb(91, 20, 107);
-                     transition: 0.5s ease-in-out;
-                 }
+             }
+             p{
+                 margin:30px 0px;
+                 line-height: 35px;
+                 max-width: 80%;
+                 font-size: 1.3em;
              }
              .cta{
-                 margin-top: 50px;
+                 margin-top: 30px;
                  button{
                      outline: none;
                      padding:20px 50px;
@@ -40,7 +35,7 @@
                      letter-spacing: 1px;
                      cursor: pointer;
                      color: white;
-                     background-color:rgb(72, 226, 226);
+                     background-color:#00B0FF;
                      border:none;
                      &:hover{
                          transform:scale(0.9);
@@ -54,7 +49,7 @@
             margin-left:20px;
             width: 40%;
             .image{
-                width:90%;
+                width:100%;
                 img{
                     width: 100%;
                 }
