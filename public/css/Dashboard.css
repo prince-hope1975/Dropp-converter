@@ -29,6 +29,22 @@
   line-height: 55px;
 }
 
+.hh1t1 .wrap .text1 h2 span {
+  text-transform: uppercase;
+}
+
+.hh1t1 .wrap .text1 h2 .any1 {
+  color: burlywood;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+.hh1t1 .wrap .text1 h2 .any2 {
+  color: #5b146b;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
 .hh1t1 .wrap .text1 .cta {
   margin-top: 50px;
 }
@@ -61,7 +77,7 @@
 }
 
 .hh1t1 .wrap .hh221 .image {
-  width: 80%;
+  width: 90%;
 }
 
 .hh1t1 .wrap .hh221 .image img {

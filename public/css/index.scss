@@ -48,6 +48,9 @@ body{
             font-size: 1.5em;
         }
     }
+    .cta{
+        display: none;
+    }
     .tools{
         display: none;
         ul{
@@ -320,6 +323,12 @@ footer{
                     font-size:0.9em;
                 }
             }
+        }
+        .menu{
+            display: none;
+        }
+        .cta{
+            display: block;
         }
     }
     form{

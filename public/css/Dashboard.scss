@@ -3,6 +3,7 @@
     padding:0px;
     box-sizing: border-box;
 }
+
 .hh1t1{
    width:100%;
    margin-top: 15%;
@@ -15,6 +16,17 @@
                  font-size: 2.6em;
                  color: rgb(58, 58, 58);
                  line-height:55px;
+                 span{
+                     text-transform: uppercase;
+                 }
+                 .any1{
+                     color:burlywood;
+                     transition: 2s ease-in-out;
+                 }
+                 .any2{
+                     color:rgb(91, 20, 107);
+                     transition: 0.5s ease-in-out;
+                 }
              }
              .cta{
                  margin-top: 50px;
@@ -42,7 +54,7 @@
             margin-left:20px;
             width: 40%;
             .image{
-                width:80%;
+                width:90%;
                 img{
                     width: 100%;
                 }

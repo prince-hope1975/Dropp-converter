@@ -56,6 +56,10 @@ body {
   font-size: 1.5em;
 }
 
+.divette .cta {
+  display: none;
+}
+
 .divette .tools {
   display: none;
 }
@@ -361,6 +365,12 @@ footer .wrap .credits a {
   }
   .divette .tools ul li {
     font-size: 0.9em;
+  }
+  .divette .menu {
+    display: none;
+  }
+  .divette .cta {
+    display: block;
   }
   form {
     padding: 50px;
