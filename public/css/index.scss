@@ -16,19 +16,23 @@ body{
     width:90%;
     margin:0 auto;
 }
-.divette{
+.divelyn{
+    background-color:#f4f8fc; 
     height:auto;
+    width: 100%;  
+    top:0px;
     left: 0px;
-    padding:15px 20px;
-    width:100%;
     position: absolute;
+   
+}
+.divette{
+    width:90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:15px 0px;
     align-content: center;
-    background-color:#f4f8fc;
-    margin-bottom:40px;
-    top:0px;
     .logo{
         h2{
             font-size: 1.2em;
@@ -255,13 +259,19 @@ footer{
     header{
         margin-top: 10%;
     }
+    .container{
+        width:90%;
+    }
+    .divette{
+        width:90%;
+    }
 }
 @media (min-width:500px){
     .container{
         width:80%;
     }
     .divette{
-        padding:15px 50px;
+        width:80%;
     }
     form{
         width:87%;
@@ -278,10 +288,14 @@ footer{
     }
 }
 @media (min-width:720px){
+    .container{
+        width:85%;
+    }
     form{
         width:80%;
-    } .divette{
-        padding:15px 70px;
+    } 
+    .divette{
+       width:85%;
     }
     footer{
         .wrap{
@@ -296,8 +310,9 @@ footer{
     header{
         margin-top:7%;
     }
+   
     .divette{
-        padding:20px 120px ;
+        padding:20px 0px;
         .tools{
             display: block;
             ul{

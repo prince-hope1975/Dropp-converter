@@ -10,9 +10,9 @@
        display: flex;
        justify-content: space-between;
         .text1{
-            width: 60%;
+            width: 50%;
              h2{
-                 font-size: 2.4em;
+                 font-size: 2.6em;
                  color: rgb(58, 58, 58);
                  line-height:55px;
              }
@@ -41,10 +41,12 @@
         .hh221{
             margin-left:20px;
             width: 40%;
-            height:280px;
-            border-radius:120px;
-            transform:rotateZ(350deg);
-            background:rgb(226, 152, 72);
+            .image{
+                width:80%;
+                img{
+                    width: 100%;
+                }
+            }
         }
    }
   
