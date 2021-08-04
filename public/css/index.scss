@@ -72,7 +72,6 @@ body{
             li{
                 margin:0px 20px;
                 list-style-type: none;
-                font-size: 1.2em;
             }
             .ri-github-fill{
                 font-size:2em;
@@ -228,7 +227,6 @@ footer{
     background-color:#f4f8fc;
     color:rgb(70, 83, 89) ;
     .wrap{
-        margin-top: 10% !important; 
         width:95%;
         padding:10% 10px;
         margin:0 auto;
@@ -309,13 +307,13 @@ footer{
 }
 @media (min-width:720px){
     .container{
-        width:85%;
+        width:80%;
     }
     form{
         width:80%;
     } 
     .divette{
-       width:85%;
+       width:80%;
     }
     footer{
         .wrap{

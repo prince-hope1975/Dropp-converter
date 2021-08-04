@@ -93,7 +93,6 @@ body {
 .divette .tools ul li {
   margin: 0px 20px;
   list-style-type: none;
-  font-size: 1.2em;
 }
 
 .divette .tools ul .ri-github-fill {
@@ -267,7 +266,6 @@ footer {
 }
 
 footer .wrap {
-  margin-top: 10% !important;
   width: 95%;
   padding: 10% 10px;
   margin: 0 auto;
@@ -358,13 +356,13 @@ footer .wrap .credits a {
 
 @media (min-width: 720px) {
   .container {
-    width: 85%;
+    width: 80%;
   }
   form {
     width: 80%;
   }
   .divette {
-    width: 85%;
+    width: 80%;
   }
   footer .wrap {
     padding: 5% 10px;
