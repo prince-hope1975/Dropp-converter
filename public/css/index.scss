@@ -68,9 +68,14 @@ body{
         ul{
             display: flex;
             flex-direction: row;
+            align-items: center;
             li{
                 margin:0px 20px;
                 list-style-type: none;
+                font-size: 1.2em;
+            }
+            .ri-github-fill{
+                font-size:2em;
             }
         }
     }

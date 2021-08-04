@@ -85,11 +85,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .divette .tools ul li {
   margin: 0px 20px;
   list-style-type: none;
+  font-size: 1.2em;
+}
+
+.divette .tools ul .ri-github-fill {
+  font-size: 2em;
 }
 
 header {
