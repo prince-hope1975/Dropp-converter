@@ -93,6 +93,11 @@
     50%{transform: translateY(10%)}
      100%{transform: translateY(0);}
 }
+@keyframes ifi {
+    0%{fill:rgb(243, 148, 148)(250, 146, 146)(250, 146, 146)}
+    50%{fill:rgb(233, 212, 200);}
+     100%{fill:lavender;}
+}
 
 
 
@@ -128,6 +133,9 @@
              }
          }
      }
+     #Group1{
+         animation:ifi 1s ease-in-out infinite;
+     }
 }
 
 @media (max-width:440px){
@@ -138,6 +146,7 @@
                  p{
                      font-size: 1.1em;
                      max-width: 85%;
+                     line-height: 25px;
                      margin:35px auto;
                  }
              }

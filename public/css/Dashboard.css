@@ -194,6 +194,30 @@
   }
 }
 
+@-webkit-keyframes ifi {
+  0% {
+    fill: #f39494 250, 146, 146 250, 146, 146;
+  }
+  50% {
+    fill: #e9d4c8;
+  }
+  100% {
+    fill: lavender;
+  }
+}
+
+@keyframes ifi {
+  0% {
+    fill: #f39494 250, 146, 146 250, 146, 146;
+  }
+  50% {
+    fill: #e9d4c8;
+  }
+  100% {
+    fill: lavender;
+  }
+}
+
 @media (max-width: 750px) {
   .hh1t1 {
     margin-top: 15%;
@@ -226,6 +250,10 @@
     font-size: 2em;
     line-height: 47px;
   }
+  #Group1 {
+    -webkit-animation: ifi 1s ease-in-out infinite;
+            animation: ifi 1s ease-in-out infinite;
+  }
 }
 
 @media (max-width: 440px) {
@@ -235,6 +263,7 @@
   .hh1t1 .wrap .text1 p {
     font-size: 1.1em;
     max-width: 85%;
+    line-height: 25px;
     margin: 35px auto;
   }
   .hh1t1 .wrap .hh221 {
