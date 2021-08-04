@@ -7,7 +7,7 @@
 
 .hh1t1 {
   width: 100%;
-  margin-top: 15%;
+  margin-top: 13%;
 }
 
 .hh1t1 .wrap {
@@ -17,6 +17,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px 0px;
 }
 
 .hh1t1 .wrap .text1 {
@@ -64,14 +65,131 @@
 
 .hh1t1 .wrap .hh221 {
   margin-left: 20px;
-  width: 40%;
+  width: 45%;
 }
 
 .hh1t1 .wrap .hh221 .image {
   width: 100%;
 }
 
-.hh1t1 .wrap .hh221 .image img {
+.hh1t1 .wrap .hh221 .image svg {
   width: 100%;
+  height: auto;
+}
+
+#doc1 {
+  -webkit-animation: move 3s ease-in-out infinite;
+          animation: move 3s ease-in-out infinite;
+}
+
+#doc2 {
+  -webkit-animation: twinkle 3s ease-in-out infinite;
+          animation: twinkle 3s ease-in-out infinite;
+}
+
+#Group1 {
+  fill: lavender;
+}
+
+#document_shadow {
+  -webkit-animation: bb 4s forwards ease-in-out infinite;
+          animation: bb 4s forwards ease-in-out infinite;
+}
+
+#woman {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes twinkle {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes bb {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bb {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=Dashboard.css.map */

@@ -6,10 +6,11 @@
 
 .hh1t1{
    width:100%;
-   margin-top: 15%;
+   margin-top: 13%;
    .wrap{
        display: flex;
        justify-content: space-between;
+       padding:20px 0px;
         .text1{
             width: 50%;
              h2{
@@ -47,14 +48,50 @@
 
         .hh221{
             margin-left:20px;
-            width: 40%;
+            width: 45%;
             .image{
                 width:100%;
-                img{
-                    width: 100%;
-                }
+               svg{
+                   width:100%;
+                   height: auto;
+               }
             }
         }
    }
   
 }
+
+   #doc1 {
+    animation: move 3s ease-in-out infinite;
+   }
+   #doc2{
+       animation : twinkle 3s ease-in-out infinite;
+   }
+   #Group1{
+       fill:lavender;
+   }
+   #document_shadow{
+    animation: bb 4s forwards ease-in-out infinite;
+   }
+   #woman{
+       animation-delay: 1s;
+       animation-duration: 3s;
+   }
+   @keyframes move{
+       0%{transform: translateY(0)}
+       50%{transform: translateY(10%)}
+        100%{transform: translateY(0);}
+   }
+   @keyframes twinkle{
+    0%{transform: translateY(0)}
+    50%{transform: translateY(-10%)}
+     100%{transform: translateY(0);}
+}
+@keyframes bb{
+    0%{transform: translateY(0)}
+    50%{transform: translateY(10%)}
+     100%{transform: translateY(0);}
+}
+
+
+
