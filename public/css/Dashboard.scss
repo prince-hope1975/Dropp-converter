@@ -96,3 +96,54 @@
 
 
 
+@media (max-width:750px){
+      .hh1t1{
+          margin-top:15%;
+          .wrap{
+              flex-direction:column;
+              .text1, .hh221 {
+                  width:100%;
+              }
+              .hh221{
+                 margin :40px auto;
+              }
+              .text1{
+                  text-align: center;
+                  p{
+                   margin:50px auto;
+                  }
+              }
+          }
+      }
+}
+@media (max-width:600px){
+     .hh1t1{
+        margin-top:20%;
+         .wrap{
+             .text1{
+                 h2{
+                     font-size:2em;
+                     line-height:47px;
+                 }
+             }
+         }
+     }
+}
+
+@media (max-width:440px){
+    .hh1t1{
+        margin-top:25%;
+         .wrap{
+             .text1{
+                 p{
+                     font-size: 1.1em;
+                     max-width: 85%;
+                     margin:35px auto;
+                 }
+             }
+             .hh221{
+                 margin-top:70px ;
+             }
+         }
+     }
+}
