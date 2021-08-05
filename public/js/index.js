@@ -9,7 +9,7 @@ this.addEventListener('click', (e)=> {
 const  animate_landing_page = () =>{
   const array = {
     pictures : ['jpg', 'excel', 'md', 'html','sass', 'mp3-svgrepo-com', 'json', 'png', 'mp4', 'ppt','word', 'pdf','textfile'],
-    svg: ['upload', 'dnd'],
+    svg: ['upload','01', 'dnd'],
     h3: ['Upload file', 'wait 2s...', 'Download file']
   }
 
@@ -43,8 +43,8 @@ const  animate_landing_page = () =>{
 
   
   setInterval(()=>{
-    how_to_h3.innerHTML = `<h3 class="animate__animated animate__flipOutX">${array.h3[x]}</h3>`;
-    if (x > array.h3.length - 1){
+    how_to_h3.innerHTML = `<h3 class="animate__animated animate__flipInX">${array.h3[x]}</h3>`;
+    if (x > array.h3.length - 2){
       x= 0;
     }
     else{
