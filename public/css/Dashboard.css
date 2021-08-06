@@ -100,6 +100,7 @@ h2 {
 
 .Howto .wrap .hh221 .image img {
   width: 80%;
+  height: 250px;
 }
 
 .Howto .wrap .text_field {
@@ -107,14 +108,19 @@ h2 {
   text-align: left;
 }
 
-.Howto .wrap .text_field h3 {
-  font-size: 2.5em;
-  font-weight: 600;
+.Howto .wrap .text_field p {
+  font-weight: 700;
   color: #3a3a3a;
 }
 
+.Howto .wrap .text_field h3 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #F7925E;
+}
+
 .support {
-  margin-top: 12%;
+  margin-top: 15%;
 }
 
 .support .wrap .text_field {
@@ -125,7 +131,7 @@ h2 {
 }
 
 .support .wrap .text_field h3 {
-  font-size: 2em;
+  font-size: 2.3em;
   color: #3a3a3a;
   line-height: 54px;
 }

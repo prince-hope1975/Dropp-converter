@@ -5,3 +5,6 @@ uploads
 /uploads
 *.css.map
 *.scss
+/public/css/Dashboard.scss
+public/css/Dashboard.scss
+/public/css/index.scss

@@ -21,8 +21,11 @@ body {
   margin: 0 auto;
 }
 
-.divelyn {
+.divelyn-background {
   background-color: #f4f8fc;
+}
+
+.divelyn {
   height: auto;
   position: fixed;
   z-index: 100;

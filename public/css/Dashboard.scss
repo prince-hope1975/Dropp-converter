@@ -75,29 +75,34 @@ h2{
             .image{
                 width:100%;
                 img{
-                    width:80%;
+                    width: 80%;
+                    height: 250px;
                 }
             }
         }
         .text_field{
             width:40%;
             text-align: left;
+            p{
+                font-weight:700;
+                color:rgb(58, 58, 58);
+            }
            h3{
              font-size: 2.5em;
              font-weight: 600;
-             color: rgb(58, 58, 58);
+             color:#F7925E;
            }
         }
     }
 }
 .support{
-    margin-top: 12%;
+    margin-top: 15%;
     .wrap{
         .text_field{
             align-self: center;
             width:45%;
             h3{
-                font-size:2em;
+                font-size:2.3em;
                 color: rgb(58, 58, 58);
                 line-height: 54px;
             }

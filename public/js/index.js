@@ -32,7 +32,7 @@ const  animate_landing_page = () =>{
 
   
   setInterval(()=>{
-    image_container_how_to.innerHTML = `<img class="animate__animated animate__lightSpeedInLeft" src='/images/${array.svg[y]}.svg' alt='file formats'>`;
+    image_container_how_to.innerHTML = `<img class="animate__animated animate__slideInLeft" src='/images/${array.svg[y]}.svg' alt='file formats'>`;
     if(y > (array.svg.length - 2 )){
       y = 0;
     }
@@ -50,7 +50,19 @@ const  animate_landing_page = () =>{
     else{
       x++
     }
-  }, 2000)
+  }, 2000);
+
+ const support_numbers = document.querySelector('#support');
+ let u = 0;
+
+
+  setInterval(()=>{
+    support_numbers.textContent = 0 + u;
+    u++;
+    if(u > array.pictures.length){
+     support_numbers.textContent = array.pictures.length;
+    }
+  }, 200)
 }
 
 this.addEventListener('DOMContentLoaded', animate_landing_page);
