@@ -23,6 +23,7 @@ body {
 
 .divelyn-background {
   background-color: #f4f8fc;
+  transition: 0.3s ease-in;
 }
 
 .divelyn {
@@ -30,6 +31,7 @@ body {
   position: fixed;
   z-index: 100;
   width: 100%;
+  transition: 0.3s ease-in;
   top: 0px;
   left: 0px;
 }
